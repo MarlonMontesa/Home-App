@@ -1,0 +1,22 @@
+<section class="search">
+    
+    <form class="form">
+        <input type="text" placeholder="Filter by city" class="inputStyle"/>
+        <button class="primary" onclick="" type="button">Search</button>
+    </form>
+    <div class="details">
+        <p>
+        house locations you can rent anywhere just browse the website or search in the search bar
+    </p>
+    </div>
+    
+
+</section>
+
+
+<section class="results">
+    <app-housing-location *ngFor="let housingLocations of housingLocationList" 
+    [housingLocation]="housingLocations"
+    ></app-housing-location>
+</section>
+
